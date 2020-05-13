@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/iv_event"
+        android:layout_width="@dimen/item_event_height"
+        android:layout_height="@dimen/item_event_height"
+        android:background="@drawable/ic_normal_event"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@+id/iv_event"
+        android:textSize="17sp"
+        android:text="欢迎来到备忘录"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/item_event_height"/>
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="@dimen/item_event_height"
+        android:layout_height="@dimen/item_event_height"
+        android:layout_toRightOf="@id/tv_title"
+        android:background="@drawable/ic_edit"/>
+
+</RelativeLayout>
